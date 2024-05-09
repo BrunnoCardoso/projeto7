@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação 01</title>
+
+  <style>
+    body {
+      background-color: mediumpurple;
+    }
+
+    .square {
+      width: 4rem;
+      height: 4rem;
+      background-color: white;
+      opacity: .6;
+    
+      animation-name: move;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+
+      animation-delay: 2s;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes move {
+      0% {
+
+      }
+
+      100% {
+        transform: translateX(calc(100vw - 100% - 16px));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+</body>
+</html>
